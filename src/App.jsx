@@ -4,7 +4,7 @@ import Header from "./components/Header/Header"
 import Theme from "./components/Theme/Theme"
 import Home from "./page/Home"
 import "animate.css"
-import WOW from "wowjs"
+// import WOW from "wowjs"
 import { ThemeContextProvider } from "./contexts/ThemeContext"
 import { motion } from "framer-motion"
 
@@ -12,7 +12,9 @@ import { motion } from "framer-motion"
 function App() {
   useEffect(() => {
     // new WOW.WOW().init();
-    new WOW().init();
+    // new WOW().init();
+    const WOW = require("wowjs"); 
+    new WOW.WOW().init(); 
   }, []);
 
   return (
