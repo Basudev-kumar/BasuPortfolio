@@ -29,7 +29,7 @@
 
 // components/Theme/Theme.js
 import { useThemeContext } from "../../contexts/ThemeContext";
-import "./Theme.css";
+import "./theme.css";
 
 const Theme = () => {
   const { theme, toggleTheme } = useThemeContext();
