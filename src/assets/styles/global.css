@@ -1,0 +1,33 @@
+Global variables
+:root {
+  --body-color: #ddd;
+  --primary-color: #8750f7;
+  --secondary-color: #2a1454;
+  --white-color: #fff;
+  --light-color: #f6f3fc;
+  --body-font: "Sora", sans-serif;
+  --textClr: #140c1c;
+}
+
+[data-bs-theme="dark"] {
+  --light-color: #050709;
+  --textClr: #fff;
+  --body-color: #0f0715;
+}
+
+/* Base styles */
+body {
+  font-family: var(--body-font);
+  color: var(--textClr);
+  background-color: var(--body-color);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Responsive typography */
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}

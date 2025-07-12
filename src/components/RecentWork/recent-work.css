@@ -1,0 +1,349 @@
+/* .recent-work .nav-item{
+    z-index:99;
+}
+
+
+.recent-work .nav-item .nav-link,
+.recent-work .nav-item .nav-link.active{
+    background: transparent;
+}
+
+
+.recent-work .nav-item .nav-link.active{
+    color: var(--white-color);
+}
+
+.recent-work .nav-item .nav-link:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+
+.recent-work .service-des{
+    visibility: hidden;
+    background: linear-gradient(250deg,
+        var(--secondary-color) 0%,
+        var(--primary-color) 100%
+    );
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    bottom: 1%;
+    padding: 18px;
+    border-radius: 12px;
+    transition: all 0.3s ease-in;
+    transform: translateY(10%);
+
+
+}
+
+.recent-work .service-item{
+    background: #140c1c;
+}
+
+.recent-work .service-item:hover .service-des{
+    transform: translateY(-20%);
+    visibility: visible;
+}
+
+
+.recent-work .active-bg{
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    position:absolute;
+    z-index:1;
+    background:var(--primary-color);
+    background: linear-gradient(
+    260deg,
+    var(--secondary-color) 0,
+    var(--primary-color) 100%) ;
+    transition: all 0.5s ease;
+}
+
+
+
+
+
+
+
+.nav-pills .nav-link {
+    min-width: 120px; 
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 20px; 
+}
+
+@media (max-width: 768px) {
+    .nav-pills {
+        flex-wrap: wrap;
+    }
+    .nav-pills .nav-item {
+        margin-bottom: 8px;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.recent-work {
+    background-color: var(--light-color);
+    padding: 80px 0;
+}
+
+.recent-work .light-bg {
+    background-color: var(--light-color);
+}
+
+.recent-work .body-text {
+    font-size:16px;
+}
+
+.recent-work .btn-link {
+    position: relative;
+    z-index: 2;
+    transition: color 0.3s ease;
+}
+
+.recent-work .active-bg {
+    background: linear-gradient(
+        260deg,
+        var(--secondary-color) 0,
+        var(--primary-color) 100%
+    );
+    transition: all 0.5s ease;
+}
+
+.recent-work .project-card {
+    background: #140c1c;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.recent-work .project-card:hover {
+    transform: translateY(-5px);
+}
+
+.recent-work .project-image {
+    transition: transform 0.5s ease;
+}
+
+.recent-work .project-card:hover .project-image {
+    transform: scale(1.05);
+}
+
+.recent-work .project-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 90%;
+    margin: 0 5% 1%;
+    padding: 20px;
+    background: linear-gradient(
+        250deg,
+        var(--secondary-color) 0%,
+        var(--primary-color) 100%
+    );
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10%);
+    transition: all 0.3s ease;
+}
+
+.recent-work .project-card:hover .project-overlay {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-20%);
+}
+
+.recent-work .project-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.recent-work .project-description {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.recent-work .project-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.recent-work .technology-badge {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+
+@media (max-width: 768px) {
+    .recent-work {
+        padding: 60px 0;
+    }
+    
+    .recent-work .project-overlay {
+        padding: 15px;
+    }
+    
+    .recent-work .project-title {
+        font-size: 1.25rem;
+    }
+}
+
+
+
+.project-links .btn {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.9rem;
+    border-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.project-links .btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.project-overlay {
+    padding: 20px 20px 15px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Recent Work Section */
+/* .recent-work {
+    background-color: var(--light-color);
+}
+
+.project-card {
+    background: #140c1c;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.05);
+}
+
+.project-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 1.5rem;
+    background: linear-gradient(
+        to top,
+        rgba(42, 20, 84, 0.9) 0%,
+        rgba(135, 80, 247, 0.8) 100%
+    );
+    color: white;
+    transform: translateY(100%);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+    transform: translateY(0);
+}
+
+.project-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.project-description {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+}
+
+.project-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.technology-badge {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+}
+
+.project-links {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+
+@media (max-width: 992px) {
+    .project-overlay {
+        padding: 1rem;
+    }
+    .project-title {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        margin-bottom: 1.5rem;
+    }
+    .project-links {
+        flex-direction: column;
+    }
+    .project-links .btn {
+        width: 100%;
+    }
+} */
