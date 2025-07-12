@@ -11,7 +11,8 @@ import { motion } from "framer-motion"
 
 function App() {
   useEffect(() => {
-    new WOW.WOW().init();
+    // new WOW.WOW().init();
+    new WOW().init();
   }, []);
 
   return (
