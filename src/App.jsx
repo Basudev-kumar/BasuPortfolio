@@ -4,7 +4,7 @@ import Header from "./components/Header/Header"
 import Theme from "./components/Theme/Theme"
 import Home from "./page/Home"
 import "animate.css"
-import WOW from "wowjs"
+import {WOW} from "wowjs"
 import { ThemeContextProvider } from "./contexts/ThemeContext"
 import { motion } from "framer-motion"
 
